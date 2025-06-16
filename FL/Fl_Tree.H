@@ -240,6 +240,8 @@ public:
   Fl_Tree_Item* root() {
     return(_root);
   }
+  // added
+  const Fl_Tree_Prefs& prefs() const { return _prefs; }
   
   ////////////////////////////////
   // Item creation/removal methods
