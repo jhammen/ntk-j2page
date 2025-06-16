@@ -18,7 +18,7 @@ PACKAGE_VERSION = FL_MAJOR_VERSION + '.' + FL_MINOR_VERSION + '.' + FL_PATCH_VER
 API_VERSION = FL_MAJOR_VERSION + '.' + FL_MINOR_VERSION
 
 # Variables for 'waf dist'
-APPNAME = 'ntk'
+APPNAME = 'ntk-j2page'
 VERSION = PACKAGE_VERSION
 
 # Mandatory variables
