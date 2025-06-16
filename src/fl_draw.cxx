@@ -56,7 +56,7 @@ static char* underline_at;
 #define C_UTF8(c)   C_IN(c,0x80,0xBF)
 
 static bool handle_utf8_seq(const char * &s,char * &d) {
-  register const unsigned char* p=(const unsigned char*)s;
+  const unsigned char* p=(const unsigned char*)s;
   if (p[0] < 0xc2 || p[0] > 0xf4)
     return false; // not adressed in this function
   else if ( C_IN(p[0], 0xc2, 0xdf) && C_UTF8(p[1]) ) {
